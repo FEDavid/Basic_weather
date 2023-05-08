@@ -6,13 +6,13 @@ print (sys.version)
 app = Flask(__name__, static_folder="static")
 location = ""
 img = path.join('static', 'images')
+display = "none"
 
 # FLASK ----------------------------------------------------------------
 
 @app.route('/',methods=["GET","POST"])
 def index():
     greeting = check_greeting()
-    display = "none"
     return render_template("index.html", greeting = greeting, location = location, display=display)
 
 @app.route('/set_name', methods=["POST"])
@@ -22,11 +22,10 @@ def set_name():
     greeting = "Hello, " + user_name.capitalize() + "!"
     
     # create a response object
-    resp = make_response(render_template("index.html", greeting = greeting, location = location))
+    resp = make_response(render_template("index.html", greeting = greeting, display=display))
     
     # set a cookie with the user's name
     resp.set_cookie('user_name', user_name)
-    
     return resp
 
 @app.route('/get_weather', methods=["POST"])

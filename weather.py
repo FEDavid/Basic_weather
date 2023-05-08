@@ -54,6 +54,8 @@ def get_weather(location):
       wind_speed = w["speed"]
       wind_deg = w["deg"]
 
+      location = location.capitalize()
+
       # print following values
       location_out = "\n{0:<30} {1}\n".format("Location:", location)
       temp_out = "{:.2f}{}\n".format(current_temperature, degree_sign)
