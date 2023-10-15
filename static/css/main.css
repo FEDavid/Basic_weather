@@ -4,9 +4,31 @@ html body{
 }
 
 #main_container{
+    width: 90%;
     background: #2C4A99;
     border-radius: 20px;
     -webkit-box-shadow: 0px 0px 10px 0px rgba(51,255,255,0.4);
     -moz-box-shadow: 0px 0px 10px 0px rgba(51,255,255,0.4);
     box-shadow: 0px 0px 10px 0px rgba(39, 199, 199, 0.4);
+}
+
+#weather_card{
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 0;
+    padding-bottom: 15px;
+}
+
+/* Breakpoints */
+
+@media (min-width: 992px) { 
+
+#main_container{
+    width: 50%;
+    }
+
+#weather_card{
+    padding: 15px;
+}
+
 }
