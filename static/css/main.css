@@ -17,11 +17,6 @@ body{
     padding: 0!important;
 }
 
-.mb-4, .my-4 {
-    margin-bottom: 0!important;
-    margin-top: 0!important;
-}
-
 #weather_card{
     padding-left: 30px;
     padding-right: 30px;
@@ -33,16 +28,20 @@ body{
     background-color: rgba(255, 255, 255, 0.5);
 }
 
+.weatherIcon{
+    fill: blue;
+}
+
 /* Breakpoints */
 
 @media (min-width: 992px) { 
 
 #main_container{
     width: 50%;
-    }
+}
 
 #weather_card{
-    padding: 15px;
+    padding: 0.938rem;
 }
 
 }
