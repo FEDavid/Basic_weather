@@ -35,6 +35,10 @@ body{
     fill: blue;
 }
 
+.col.mb-4 {
+    margin-bottom: 0!important;
+}
+
 /* Breakpoints */
 
 @media (min-width: 992px) { 
@@ -45,6 +49,10 @@ body{
 
 #weather_card{
     padding: 0.938rem;
+}
+
+.col.mb-4 {
+    margin-bottom: 1.5rem;
 }
 
 }
