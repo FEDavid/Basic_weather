@@ -35,10 +35,6 @@ body{
     fill: blue;
 }
 
-.col.mb-4 {
-    margin-bottom: 0!important;
-}
-
 /* Breakpoints */
 
 @media (min-width: 992px) { 
