@@ -45,9 +45,3 @@ body{
 }
 
 }
-
-@media (max-width: 992px) {
-    body {
-        height:100vh;
-    }
-}
