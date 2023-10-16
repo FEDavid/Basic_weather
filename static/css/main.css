@@ -4,7 +4,10 @@ html body{
     background-repeat: no-repeat;
     background-size: cover;
     backdrop-filter: blur(10px);
-    height: 100vh;
+}
+
+html, body {
+    min-height:100vh;
 }
 
 body{
