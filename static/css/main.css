@@ -21,14 +21,15 @@ body{
 }
 
 #weather_card{
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 0;
-    padding-bottom: 15px;
+    padding: 0 1.875rem 15px 1.875rem;
 }
 
 .appBG{
     background-color: rgba(255, 255, 255, 0.5);
+}
+
+.leftCol{
+    margin-bottom: 1.5rem!important;
 }
 
 .weatherIcon{
@@ -46,4 +47,9 @@ body{
 #weather_card{
     padding: 0.938rem;
 }
+
+.leftCol{
+    margin-bottom: 0!important;
+}
+
 }
