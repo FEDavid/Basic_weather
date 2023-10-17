@@ -44,6 +44,12 @@ body{
     text-align: center;
 }
 
+.weather_details{
+    padding: 0; 
+    text-align: left;
+    font-size: .92rem;
+}
+
 .weather_details li{
     float: left;
     clear: left;
