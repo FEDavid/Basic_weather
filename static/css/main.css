@@ -38,6 +38,10 @@ body{
     background-color: rgba(255, 255, 255, 0.5)!important;
 }
 
+.boldHead{
+    font-weight: 400;
+}
+
 /* Breakpoints */
 
 @media (min-width: 992px) { 
