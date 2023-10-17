@@ -35,11 +35,10 @@ def get_weather():
     location = request.form['location']
     location, temp_out, desc_out = weather.get_weather(location)
     if "cloud" in desc_out:
-        icon_file = path.join(img, 'cloud.svg')
+        weather_icon = "bi bi-cloud-fill"
     else:
-        icon_file = path.join(img, 'rain.svg')
+        weather_icon = "bi bi-brightness-high-fill"
     print(desc_out)
-    weather_icon = icon_file
 
     # create a response object
     display = "inline"
