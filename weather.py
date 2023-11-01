@@ -1,5 +1,6 @@
 # Imports
 import requests, sys
+from decouple import config
 
 # Variables ----------------------------------------------------------------
 
@@ -10,7 +11,7 @@ degree_sign = u'\N{DEGREE SIGN}'
 # Functions ----------------------------------------------------------------
 
 def location_check(location):
-    api_key = "fe7a66faf837f159cc5fc11a4c1196dd"
+    api_key = config('API_KEY')
     base_url = "http://api.openweathermap.org/data/2.5/weather?"
     complete_url = base_url + "appid=" + api_key + "&q=" + location
 
